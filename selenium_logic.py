@@ -46,9 +46,6 @@ def add_info(info: dict):
     driver.find_elements(By.XPATH, '//tr[@class="row3"]/td/input')[-1].click()
     sleep(1)
 
-    driver.close()
-    vdisplay.stop()
-
     try:
         if driver.find_element(By.ID, 'ui-id-3').text == 'Предупреждение':
             driver.close()
@@ -93,6 +90,7 @@ def add_info(info: dict):
 
         driver.get(f'https://billing.interdom.kg/index.php?module=userprofile&username={get_user_id}')
         driver.close()
+        vdisplay.stop()
         return get_user_id
             
 

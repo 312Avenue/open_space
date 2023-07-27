@@ -166,7 +166,7 @@ mkrTun =InlineKeyboardButton(text='Тунгуч', callback_data='мкр. Тун�
 mkr4 = InlineKeyboardButton(text='4 мкр', callback_data='мкр. 4')
 mkr8 = InlineKeyboardButton(text='8 мкр', callback_data='мкр. 8')
 mkr11 = InlineKeyboardButton(text='11 мкр', callback_data='мкр. 11')
-mkr12 = InlineKeyboardButton(text='12 мкр', callback_data='мкр. 12')
+mkr12 = InlineKeyboardButton(text='12 мкр', callback_data='мкр, 12')
 
 inline_street.row(mkr11, mkr12, mkr4, mkr8)
 inline_street.row(mkrAs, mkrTun, mkrVerJal)
