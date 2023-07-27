@@ -1,7 +1,3 @@
 pyTelegramBotAPI
 selenium
-PyVirtualDisplay
-requests
-BeautifulSoup4
-lxml
 xvfbwrapper
