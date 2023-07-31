@@ -17,8 +17,8 @@ def open_space():
     driver = webdriver.Firefox()
 
     driver.get('https://billing.interdom.kg')
-    driver.find_element(By.NAME, 'username').send_keys('DjumagazievA')
-    driver.find_element(By.NAME, 'password').send_keys('86308W4YEZ')
+    driver.find_element(By.NAME, 'username').send_keys('')
+    driver.find_element(By.NAME, 'password').send_keys('')
     driver.find_element(By.XPATH, '//form[@class="ubLoginForm"]/input[4]').click()
 
 
