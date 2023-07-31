@@ -6,7 +6,7 @@ from streets import inline_street
 from selenium_logic import open_space, add_info, search, dclose
 
 
-bot = telebot.TeleBot('6326447739:AAFrNGvl3HGSq1uUQEoCzzaeXer1eJd8EC4')
+bot = telebot.TeleBot('')
 
 
 markup = types.ReplyKeyboardMarkup(resize_keyboard=True)
