@@ -92,11 +92,23 @@ def add_info(info: dict):
         driver.close()
         vdisplay.stop()
         return get_user_id
-            
 
+            
+def search(st):
+    driver.get('https://billing.interdom.kg/index.php?module=online')
+    driver.find_element(By.XPATH, '/html/body/section[2]/article/div/div/div/div[1]/div[2]/label/input').send_keys(st)
+    elem = [f'{i.text[:i.text.rfind("/")]} кв: {i.text[i.text.rfind("/")+1:]}' 
+            for i in driver.find_elements(By.CLASS_NAME, 'sorting_1')]
+    return elem
+
+
+def dclose():
+    driver.close()
+    vdisplay.stop()
 
 
 # open_space()
+# print(search('Юнусалиева'))
 # add_info(
 #     {
 #         'city': 'г. Бишкек',
